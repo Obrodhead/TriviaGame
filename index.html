@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- get jquery + bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- get local css file-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- https://getbootstrap.com/docs/4.3/components/carousel/ -->
+    <!-- https://opentdb.com/api_config.php -->
+    <title>Trivia Game</title>
+</head>
+
+<body>
+
+    <!-- create basic body element that takes up 100% of the screen in any background-color -->
+    <div class="container" style="background-color:darkgrey;">
+        <div id="image container"></div>
+        <div class="jumbotron">
+            <p id="question-container"> Instructions: You have 30 seconds to answer the movie trivia questions. If time runs out, the next
+                question will appear. You will be able to see how many you got right or wrong. Good luck!</p>
+        </div>
+        <div class="row timer">
+            <h3 id="timer">30</h3>
+        </div>
+        <div class="row">
+            <div id="answer"></div>
+        </div>
+        <!-- create another container here for our buttons-->
+        <div class="row">
+                <div class="col-md-4 text-center">
+                <button id="play-button" name="singlebutton" class="btn btn-primary btn-lg">Play game!</button>
+                <!-- timer here with float-right css -->
+                <!-- https://bootsnipp.com/snippets/nrDmZ -->
+            </div>  </div> 
+        
+        <!-- create another container here for our buttons-->
+        <div class="row button-group-section">
+                
+            
+            <div id="button-group" class="btn-group special" role="group" aria-label="Basic example">
+                <button id="buttonA" type="button" name="answerbutton" class="btn btn-secondary"></button>
+                <button id="buttonB" type="button" name="answerbutton" class="btn btn-secondary"></button>
+                <button id="buttonC" type="button" name="answerbutton" class="btn btn-secondary"></button>
+                <button id="buttonD" type="button" name="answerbutton" class="btn btn-secondary"></button>
+            </div></div>
+        
+    </div>
+    <!-- create another container here for our buttons-->
+    
+
+    <script src= "assets/javascript/app.js"></script>
+</body>
+
+</html>

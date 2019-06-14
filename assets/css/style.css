@@ -1,0 +1,42 @@
+body {
+    background-color: white;
+}
+
+.jumbotron {
+   text-align: center;
+   padding: 100px;
+   margin: 50px;
+   margin-bottom: 0px;
+
+}
+.button-group-section {
+    /* display:none; */
+}
+
+.btn-group.special {
+    display: flex;
+}
+  
+.special .btn {
+    flex: 1;
+    background-color: silver !important;
+    margin: 20px;
+    color: black ;
+}
+
+.timer {
+    float: right;
+    padding-right: 20px;
+    color: white;
+}
+.container {
+
+    background-color: darkblue !important
+}
+ .button {
+     background-color:white !important
+ }
+  #question-container
+  {
+      font-weight: bold;
+  }
